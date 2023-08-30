@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing &middot; Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar primary-nav">
+        <a href="/" class="navbar-brand" title="Home">
+            <img src="favicon-32x32.png" alt="">
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" title="Menu">
+                    <i class="bi bi-menu-button-wide"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                    <li><hr class="divider"></li>
+                    <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                    <li><hr class="divider"></li>
+                    <li><a class="dropdown-item" href="proprietors.html">Proprietors</a></li>
+                  </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+   
+    <nav class="navbar filters navbar-expand-lg"></nav>  
+
+    <div class="accounts">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                Sign In
+              </div>
+              <div class="card-body">
+                <p><i class="bi bi-person-circle"></i></p>
+                
+                <form class="accounts-form" method="post">
+                  <div class="form-group">
+                    <input type="text" name="email_username" id="id_email_username" class="form-control" placeholder="Email\Username" title="Email\Username" required>
+                    <small class="error" id="id_email_username_error"></small>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="password" name="password" id="id_password" class="form-control" placeholder="Password" title="Password" required>
+                      <div class="input-group-prepend">
+                        <button type="button" class="btn btn-primary" id="id_password_toggle" title="Show"><i id="id_password_toggle_icon" class="bi bi-eye-slash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="button-container">
+                      <button type="submit" class="btn btn-primary" id="id_signin_button" title="Sign In">Sign In</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="reset-link">
+                      <a href="password_recovery.html" class="link">Forgot Password?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Listings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Primary Nav -->
+    <nav class="navbar primary-nav">
+        <a href="/" class="navbar-brand" title="Home">
+            <img src="favicon-32x32.png" alt="">
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <div class="profile-icon" id="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" title="Menu">
+                    <i class="bi bi-menu-button-wide"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Change Password</a></li>
+                    <li><hr class="divider"></li>
+                    <li><a class="dropdown-item" href="/">Sign Out</a></li>
+                  </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Filters Nav -->
+    <nav class="navbar filters navbar-expand-lg"></nav>  
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-3">               
+                
+            </div>
+            <div class="col-lg-9">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->        
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-toggle-container">
+                            <button class="btn btn-footer" id="footer-toggler" title="Show" data-bs-toggle="collapse" data-bs-target="#footer-collapse" aria-expanded="false">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="footer-collapse" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <header class="card-header">Quick Links</header>
+                                        <div class="card-body">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" title="About"><span>About</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" title="Frequently Asked Questions"><span>FAQs</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" title="Privacy Policy"><span>Privacy Policy</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <header class="card-header">Contacts</header>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a href="tel:" class="nav-link" title="Call Us"><i class="bi bi-telephone"></i> <span>+2547xxxxxxxxx</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="mailto:" class="nav-link" title="Email Us"><i class="bi bi-envelope-paper"></i> <span>something@something.some</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" title="Visit Us"><i class="bi bi-pin-map"></i> <span>location pin</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <header class="card-header">Follow Us</header>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" title="Facebook"><img src="icons/facebook.png" class="footer-icon"> <span>Facebook</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" title="Whatsapp"><img src="icons/whatsapp.png" class="footer-icon"> <span>Whatsapp</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" title="Instagram"><img src="icons/instagram.png" class="footer-icon"> <span>Instagram</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer-copy">
+                                        &copy; Listings, <span id="year"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="ajax.js"></script>
+</body>
+</html>
