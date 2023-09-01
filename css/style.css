@@ -273,6 +273,7 @@
     position: fixed;
     bottom: .005px;
     width: 100%;
+    z-index: 50000;
 }
 .footer-toggle-container{
     padding-top: 5px;
