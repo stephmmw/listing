@@ -1,0 +1,27 @@
+
+@keyframes splashAnimation {
+    0% {background-color: #dcdcdc;}
+    50% {background-color: #bdbdbd;}
+    100%{ background-color: #dcdcdc;}
+}
+.listings .splash-image{
+    animation: splashAnimation 2s infinite linear;
+}
+.listings .rating,
+.listings .type, 
+.listings .pricing,
+.listings .location{
+    animation: splashAnimation 2.3175s infinite linear;
+}
+.gallery .view{
+    animation: splashAnimation 2s infinite linear;
+}
+.gallery .image{
+    animation: splashAnimation 2.3175s infinite linear;
+}
+.listing .description p{
+    animation: splashAnimation 2.3175s infinite linear;
+}
+.listing .utilities ul li{
+    animation: splashAnimation 2.3175s infinite linear;
+}
