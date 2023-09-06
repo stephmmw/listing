@@ -46,8 +46,35 @@
               </div>
               <div class="card-body">
                 <p><i class="bi bi-person-circle"></i></p>
-                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="social-signup">
+                      <script src="https://accounts.google.com/gsi/client" async defer></script>
+                      <div id="g_id_onload"
+                        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                        data-login_uri="https://your.domain/your_login_endpoint"
+                        data-auto_prompt="false">
+                      </div>
+                      <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="outline"
+                        data-text="sign_in_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="left">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                      <header>or</header>
+                  </div>
+                </div>
                 <form class="accounts-form" method="post">
+                  <div class="row">                    
+                    <div class="col-12">
+                      <header>Sign In with email</header>
+                    </div>
+                  </div>
                   <div class="form-group">
                     <input type="text" name="email_username" id="id_email_username" class="form-control" placeholder="Email\Username" title="Email\Username" required>
                     <small class="error" id="id_email_username_error"></small>
@@ -61,15 +88,25 @@
                     </div>
                   </div>
                   <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-6"></div>
+                      <div class="col-lg-6">
+                        <div class="reset-link">
+                          <a href="password_recovery.html" class="link"><small>Forgot Password?</small></a>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="form-group">
                     <div class="button-container">
                       <button type="submit" class="btn btn-primary" id="id_signin_button" title="Sign In">Sign In</button>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="reset-link">
-                      <a href="password_recovery.html" class="link">Forgot Password?</a>
-                    </div>
-                  </div>
+                      <span>Don't have an account?&nbsp;<a href="signup.html" class="link" title="sign up"><small>Sign Up</small></a></span>
+                    </div>                  
+                  </div>                  
                 </form>
               </div>
             </div>

@@ -46,7 +46,35 @@
               </div>
               <div class="card-body">
                 <p><i class="bi bi-person-circle"></i></p>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="social-signup">
+                      <script src="https://accounts.google.com/gsi/client" async defer></script>
+                      <div id="g_id_onload"
+                        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                        data-login_uri="https://your.domain/your_login_endpoint"
+                        data-auto_prompt="false">
+                      </div>
+                      <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="outline"
+                        data-text="sign_in_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="left">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                      <header>or</header>
+                  </div>                 
+                </div>
                 <form class="accounts-form" method="post">
+                  <div class="row">
+                    <div class="col-12">
+                      <header>Create Account</header>
+                  </div>
+                  </div>
                   <div class="form-group">
                     <input type="text" name="username" id="id_username" class="form-control" placeholder="Username" title="Username" required>
                     <small class="error" id="id_username_error"></small>
@@ -79,7 +107,7 @@
                   </div>
                   <div class="form-group">
                     <div class="reset-link">
-                      <a href="signin.html" class="link">Already have an account? Sign In</a>
+                      <span>Already have an account?&nbsp;<a href="signin.html" class="link">Sign In</a></span>
                     </div>
                   </div>
                 </form>

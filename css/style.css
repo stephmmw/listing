@@ -73,8 +73,12 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-.acounts{
+.accounts{
     margin-bottom: 1rem;
+}
+.accounts .accounts-form{
+    padding: 5px;
+    border-top: 1px solid;
 }
 .accounts .row{
     display: flex;
@@ -85,6 +89,18 @@
 .accounts .card .card-header{
     font-size: 1.75rem;
     font-weight: 600;
+    text-align: center;
+}
+.accounts .card .card-body header{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+}
+.accounts .card .card-body .social-signup{
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
     text-align: center;
 }
 .accounts .card .card-body p{
@@ -123,6 +139,9 @@
 
 .accounts .card .card-body .reset-link .link:hover{
     text-decoration: underline;
+}
+.accounts .card .card-body .reset-link span{
+    font-weight: 600;
 }
 .listings{
     padding-bottom: 2rem;
