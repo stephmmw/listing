@@ -32,14 +32,14 @@ jQuery(function(){
 
 $(document).ready(function(){
     if(document.getElementById('county')){
-        let $url = "./data/counties.json";
+        let $url = "../data/counties.json";
         getRequest($url, "counties");
     }
     
     if(document.getElementById('profile-icon')){
         let $icon = document.createElement('img');
         $icon.setAttribute('class', 'icon');
-        $icon.setAttribute('src', 'img/bg8.png')      
+        $icon.setAttribute('src', '../img/bg8.png')      
 
         $('#profile-icon').empty(); 
         let $profileIcon = document.getElementById('profile-icon');
@@ -61,7 +61,7 @@ function loadCounties($data){
 }
 
 function loadSubCounties($county){
-    let $url = "./data/counties.json";
+    let $url = "../data/counties.json";
     getRequest($url, "sub-counties", $county);
 }
 

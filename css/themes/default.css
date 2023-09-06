@@ -224,5 +224,21 @@
     color: rgb(0, 80, 0);
 }
 .profile-icon .icon{
-    border: 2px rgb(0, 180, 0) solid;
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+.side-nav{
+    border-right-color: rgba(0, 130, 0, 0.5);
+}
+.side-nav .nav .nav-item .nav-link{
+    color: #000;
+    border-color: rgba(0, 130, 0, 0.5);
+}
+.side-nav .nav .nav-item .nav-link:hover{
+    color: #fff;
+    background-color: rgba(0, 130, 0, 1);
+}
+.side-nav .nav .nav-item .nav-link.active{
+    color: #fff;
+    background-color: rgba(0, 100, 0, 1);
 }

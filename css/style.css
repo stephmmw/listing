@@ -331,6 +331,22 @@
     border-radius: 25px;
 }
 
+.side-nav{
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 1rem;
+    border-right: 1.5px solid;
+}
+.side-nav .nav .nav-item{
+    margin-bottom: 1rem;
+    padding-right: 5px;
+}
+.side-nav .nav .nav-item .nav-link{
+    border-radius: 20px;
+    border: 1px solid;
+    font-weight: 600;
+}
+
 @media screen and (min-width: 720px){
     .search .search-form{
         width: 50%;
