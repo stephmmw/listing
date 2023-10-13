@@ -1,3 +1,92 @@
+.landing{
+    min-height: 100vh;
+}
+.landing .container-fluid .row{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.landing .icon-container{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.landing .icon-container .icon{
+    width: 10%;
+}
+.landing .header{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+.landing .tagline{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    margin-top: 5vh;
+}
+.landing .tagline .l,
+.landing .tagline .r{
+    margin-top: 2vh;
+    width: 1%;
+    height: .2px;
+    border: 2px #fff solid;
+    border-style:double;
+}
+.landing .tagline .l{
+    margin-right: 15px;
+}
+.landing .tagline .r{
+    margin-left: 15px;
+}
+.landing .tagline .tag{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.landing .container-fluid .row.links{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin-top: 10vh;
+}
+.landing .links .link-container{
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align:center;
+}
+.landing .links .link-container .link{
+    width: 100%;
+    height: 150px;
+    text-decoration: none;
+}
+.landing .links .link .bi{
+    font-size: 4rem;
+}
+.landing .links .link .title{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+.l-center{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.navbar.primary-nav .navbar-brand .navbar-brand-icon{
+    width: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+}
 .primary-nav .dropdown .dropdown-menu .dropdown-item{
     margin-left: 5px;
     width: 90%;

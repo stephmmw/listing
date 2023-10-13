@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing</title>
+    <title>House Listings</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
@@ -13,6 +13,7 @@
     
 </head>
 <body>
+    <!-- Primary Nav -->
     <nav class="navbar primary-nav">
         <a href="./" class="navbar-brand" title="Home">
             <img src="favicon-32x32.png" alt="" class="navbar-brand-icon">
@@ -24,6 +25,8 @@
                     <i class="bi bi-menu-button-wide"></i>
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="users.html">User Profile</a></li>
+                    <li><hr class="divider"></li>
                     <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
                     <li><hr class="divider"></li>
                     <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
@@ -34,141 +37,153 @@
             </li>
         </ul>
     </nav>
-   
-    <nav class="navbar filters navbar-expand-lg"></nav>  
 
-    <div class="listing">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="gallery" id="gallery">
-                        <div class="view" id="view"></div>
-                        <nav class="navbar">
-                            <ul class="nav" id="image-list">
-                                <li class="nav-item">
-                                    <img src="img/bg8.png" alt="" class="image shown" data-image="image-1" id="image-1" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg2.png" alt="" class="image" id="image-2" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg3.png" alt="" class="image" id="image-3" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg4.png" alt="" class="image" id="image-4" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg5.png" alt="" class="image" id="image-5" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg6.png" alt="" class="image" id="image-6" title="View" onclick="showImage(this)">
-                                </li>
-                                <li class="nav-item">
-                                    <img src="img/bg7.png" alt="" class="image" id="image-7" title="View" onclick="showImage(this)">
-                                </li>
-                            </ul>
-                        </nav>                        
-                    </div>
-                </div>
-                <div class="col-lg-5">                    
-                    <header class="listing-header">
-                        <h3>Apartment Type</h3>
-                    </header>
-                    <div class="description">
-                       <p></p>
-                       <p></p>
-                       <p></p>
-                       <p></p>
-                       <p></p>
-                    </div>
-               
-                    <div class="utilities">
-                        <h5>Utilities</h5>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="scheduler">
-                        <div class="card">
-                            <header class="card-header">
-                                Schedule Visit
-                            </header>
-                            <div class="card-body">
-                                <form id="scheduler-form">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label for="visit-date">Date</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="date" name="visit_date" id="visit-date" class="form-control" required>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label for="visit-time">Time (Between  9 AM - 4 PM)</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="time" name="visit_time" id="visit-time" class="form-control" required>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" title="Schedule visit">Schedule</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="booking">
-                        <div class="card">
-                            <header class="card-header">
-                                Booking
-                            </header>
-                            <div class="card-body">
-                                <p class="booking-price">KSH <span id="booking-price">0.00</span></p>
-                                <ul class="price-breakdown">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <form id="booking-form">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label for="booking-duration">Move In Date</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="date" name="movein_date" id="booking-duration" class="form-control" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" title="Book">Book</button>
-                                        </div>                                        
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+    <!-- Search Nav -->
+    <nav class="navbar search">
+        <form class="search-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" name="search" id="search" class="form-control" placeholder="Search" title="Search">
+                    <div class="input-group-prepend">
+                        <button type="submit" class="btn btn-primary" title="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
                     </div>
                 </div>
             </div>
+        </form>
+    </nav>
+
+    <!-- Filters Nav -->
+    <nav class="navbar filters navbar-expand-lg">
+        <a class="navbar-brand">Filters:</a> &nbsp; &nbsp;
+        <button class="btn btn-primary navbar-toggler" data-bs-toggle="collapse" data-bs-target="#filters" aria-controls="collapse" aria-expanded="false" title="Show filters">
+            <i class="bi bi-grid"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="filters">
+            <form>
+                <ul class="nav">
+                    <li class="nav-item">                        
+                            <div class="form-group">                       
+                                <div class="row flex-row">
+                                    <div class="col-lg-2 column">
+                                        <label for="type">Type &nbsp;</label>
+                                    </div>
+                                    <div class="col-lg-8 column">
+                                        <select name="type" id="type" class="form-control" title="Type">
+                                            <option value="all"> All</option>
+                                            <option value="bedsitter_single">Bedsitter/Single</option>
+                                            <option value="one_bedroom">1 Bedroom</option>
+                                            <option value="two_bedroom">2 Bedroom</option>
+                                            <option value="three_bedroom">3 Bedroom</option>
+                                            <option value="four_plus_bedroom">4+ Bedroom</option>
+                                        </select>
+                                    </div>
+                                    &nbsp;
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                            <div class="form-group">                        
+                                <div class="row flex-row">
+                                    <div class="col-lg-2 column">
+                                        <label for="pricing">Pricing &nbsp;</label>
+                                </div>
+                                    <div class="col-lg-3 column">
+                                        <select name="min_price" id="min_price" placeholder="Min" class="form-control" title="Min">
+                                            <option>Min</option>
+                                            <option value="0">KSH 0</option>
+                                            <option value="5000">KSH 5,000</option>
+                                            <option value="10000">KSH 10,000</option>
+                                            <option value="20000">KSH 20,000</option>
+                                            <option value="30000">KSH 30,000</option>
+                                            <option value="40000">KSH 40,000</option>
+                                            <option value="50000">KSH 50,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-1 column">
+                                        &minus;
+                                    </div>
+                                    <div class="col-lg-3 column">
+                                        <select name="max_price" id="max_price" placeholder="Max" class="form-control" title="Max">
+                                            <option>Max</option>
+                                            <option value="5000">KSH 5,000</option>
+                                            <option value="10000">KSH 10,000</option>
+                                            <option value="20000">KSH 20,000</option>
+                                            <option value="30000">KSH 30,000</option>
+                                            <option value="40000">KSH 40,000</option>
+                                            <option value="50000plus">KSH 50,000+</option>
+                                        </select>
+                                    </div>
+                                    &nbsp;
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                            <div class="form-group">
+                                
+                                <div class="row flex-row">
+                                    <div class="col-lg-2 column">
+                                        <label for="location">Location &nbsp;</label>
+                                </div>
+                                    <div class="col-lg-4 column">
+                                        <select name="county" id="county" class="form-control" title="County">
+                                            <option>Counties</option>
+                                            <option value="all"> All</option>
+                                        </select>
+                                    </div>
+                                &nbsp;
+                                    <div class="col-lg-4 column">
+                                        <select name="sub_county" id="sub-county" class="form-control" title="Sub-County">
+                                            <option>Sub-counties</option>
+                                        </select>
+                                    </div>                                   
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-12 column">
+                                    <button type="submit" class="btn btn-primary" title="Apply Filters">Go</button>
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </li>
+                </ul>
+            </form>
+        </div>    
+    </nav>   
+
+    <!-- Listing -->
+    <div class="listings">
+        <div class="container-fluid">
+            <div class="row" id="listings">
+
+                <!--div class="col-12 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#" class="listing-link" title="View">
+                                <div class="splash-image">
+                                
+                                </div>  
+                            </a>                            
+                        </div>
+                        <div class="card-footer">
+                            <p class="rating"></p>
+                            <p class="type"></p>
+                            <p class="location"></p>
+                            <p class="pricing"></p>
+                        </div>
+                    </div>
+                </div-->
+                
+            </div>
         </div>
     </div>
+    
+    <!-- Footer -->
+        
     <footer>
         <div class="footer">
             <div class="container-fluid">
@@ -254,5 +269,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/ajax.js"></script>
 </body>
 </html>

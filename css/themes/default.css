@@ -1,3 +1,29 @@
+.body{
+    color: #fff;
+    background-color: #204a26;
+}
+
+.landing .tagline .l,
+.landing .tagline .r{
+    border-color: #fff;
+}
+.landing .links .link-container .link{
+    color: #fff;
+}
+.landing .links .link-container:hover{
+    border-color: goldenrod;
+}
+
+.navbar.primary-nav{
+    background-color: #204a26;
+}
+.navbar.primary-nav .navbar-brand .navbar-brand-icon{
+    border-color: transparent;
+}
+.navbar.primary-nav .navbar-brand .navbar-brand-icon:hover{
+    border-color: #fff;
+}
+
 .primary-nav .dropdown .btn.btn-secondary{
     background: #fff;
     color: #000;
